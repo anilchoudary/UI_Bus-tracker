@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".trip_activity">
+
+
+    <com.sothree.slidinguppanel.SlidingUpPanelLayout
+        android:id="@+id/slidingUpPanelLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:umanoFlingVelocity="5"
+        app:umanoPanelHeight="188dp"
+        app:umanoClipPanel="true"
+        app:umanoOverlay="true"
+        app:umanoInitialState="collapsed"
+        app:umanoDragView="@drawable/background"
+        app:umanoScrollableView="@layout/activity_layout_driver_second"
+        app:umanoShadowHeight="51dp">
+
+        <include
+            layout="@layout/activity_user"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+
+        <include
+            layout="@layout/activity_layout_driver_second"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+
+
+    </com.sothree.slidinguppanel.SlidingUpPanelLayout>
+
+
+</android.support.constraint.ConstraintLayout>
